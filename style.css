@@ -1,9 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1760px;
+  display: flex;
+}
+.container__menu {
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
-  flex-direction: column;
 }
 .menu__list {
-  color: red;
+  display: flex;
+  list-style-type: none;
+}
+.menu__link {
+  color: blue;
+  margin: 0 0 0 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

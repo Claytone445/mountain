@@ -1,7 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1760px;
+  display: flex;
+
+  &__menu {
+    justify-content: space-between;
+  }
+}
+
 .menu {
   display: flex;
-  flex-direction: column;
+
   &__list {
-    color: red;
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__link {
+    color: blue;
+    margin: 0 0 0 40px;
   }
 }
