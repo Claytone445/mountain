@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1920px;
+  background: url('img/bg-main.png') no-repeat, linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%) fixed;
+  background-size: 100%;
+}
+
 .container {
   margin: 64px 80px 0 80px;
   max-width: 1761px;
@@ -12,18 +18,29 @@
   &__menu {
     justify-content: space-between;
   }
+
+  .logo {
+    color: #FFFFFF;
+  }
 }
 
 .menu {
+  color: #FFFFFF;
   display: flex;
 
   &__list {
+    color: #FFFFFF;
     display: flex;
     list-style-type: none;
   }
 
   &__link {
-    color: blue;
+    color: #FFFFFF;
     margin: 0 0 0 40px;
+    text-decoration: none;
   }
+}
+
+.auth {
+  color: #FFFFFF;
 }
