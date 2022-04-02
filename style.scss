@@ -4,6 +4,27 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "chronicle-display";
+  src: url('fonts/Chronicle Display Black.otf');
+
+  font-family: "gilroy-bold";
+  src: url('fonts/Gilroy-Bold.ttf');
+
+  font-family: "gilroy-extrabold";
+  src: url('fonts/Gilroy-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: "gilroy-bold";
+  src: url('fonts/Gilroy-Bold.ttf');
+}
+
+@font-face {
+  font-family: "gilroy-extrabold";
+  src: url('fonts/Gilroy-ExtraBold.ttf');
+}
+
 body {
   max-width: 1920px;
   background: url('img/bg-main.png') no-repeat, linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%) fixed;
@@ -12,7 +33,7 @@ body {
 
 .container {
   margin: 64px 80px 0 80px;
-  max-width: 1761px;
+  max-width: 1760px;
   display: flex;
 
   &__menu {
@@ -21,6 +42,10 @@ body {
 
   .logo {
     color: #FFFFFF;
+    font-family: chronicle-display;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 32px;
   }
 }
 
@@ -36,11 +61,21 @@ body {
 
   &__link {
     color: #FFFFFF;
+    font-family: gilroy-bold;
+    font-weight: bold;
+    font-size: 18px;
     margin: 0 0 0 40px;
     text-decoration: none;
   }
 }
 
 .auth {
-  color: #FFFFFF ;
+  display: flex;
+  font-family: gilroy-bold;
+  font-size: 17px;
+  color: #FFFFFF;
+
+  &__icon {
+    margin: 0 10px 0 0;
+  }
 }
