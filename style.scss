@@ -1,12 +1,10 @@
 @import "adaptiveMixins";
-@import "adaptiveHamburgerMenu";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 
 @font-face {
   font-family: "chronicle-display";
@@ -56,37 +54,28 @@ body {
 .menu {
   color: #FFFFFF;
   display: flex;
-
   #menu__toggle {
     opacity: 0;
   }
-
-
   @include sm-max {
-    //adaptive menu
-    @include adaptiveHamburgerMenu
-    //adaptive menu
-    &__list {
-      color: #FFFFFF;
-      display: flex;
-      list-style-type: none;
-    }
+    @import "adaptiveHamburgerMenu";
+  }
 
-    &__link {
-      color: #FFFFFF;
-      font-family: gilroy-bold;
-      font-weight: bold;
-      font-size: 18px;
-      margin: 0 0 0 40px;
-      text-decoration: none;
-      @include md-max {
-        font-size: 14px;
-      }
-      margin: 0 0 0 10px;
-    }
+  &__list {
+    color: #FFFFFF;
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__link {
+    color: #FFFFFF;
+    font-family: gilroy-bold;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 0 40px;
+    text-decoration: none;
   }
 }
-
 
 .auth {
   display: flex;

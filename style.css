@@ -156,11 +156,6 @@ body {
   margin: 0 0 0 40px;
   text-decoration: none;
 }
-@media (max-width: 768px) {
-  .menu__link {
-    margin: 0 0 0 10px;
-  }
-}
 
 .auth {
   display: flex;
