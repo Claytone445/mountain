@@ -54,9 +54,11 @@ body {
 .menu {
   color: #FFFFFF;
   display: flex;
+
   #menu__toggle {
     opacity: 0;
   }
+
   @include sm-max {
     @import "adaptiveHamburgerMenu";
   }
@@ -74,6 +76,10 @@ body {
     font-size: 18px;
     margin: 0 0 0 40px;
     text-decoration: none;
+    @include md-max {
+      margin: 0 0 0 10px;
+      font-size: 18px;
+    }
   }
 }
 
