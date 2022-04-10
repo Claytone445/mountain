@@ -33,6 +33,7 @@ body {
   background-size: 100%;
 }
 
+
 .container {
   margin: 64px 80px 0 80px;
   max-width: 1760px;
@@ -41,15 +42,50 @@ body {
   &__menu {
     justify-content: space-between;
   }
+}
 
-  .logo {
+.announce {
+  margin-top: 200px;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  margin: 65px 0 0 0;
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: gilroy-bold;
     color: #FFFFFF;
-    font-family: chronicle-display;
-    line-height: 20px;
-    font-weight: bold;
-    font-size: 32px;
+    writing-mode: vertical-rl;
+    margin: 0 0 24px 0;
+  }
+
+  &__icon {
+    max-width: 24px;
+    max-height: 24px;
+    margin: 0 0 24px 0;
   }
 }
+
+.announcement {
+
+
+  &__try {
+
+  }
+}
+
+.logo {
+  color: #FFFFFF;
+  font-family: chronicle-display;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
 
 .menu {
   color: #FFFFFF;

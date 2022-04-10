@@ -35,7 +35,32 @@ body {
 .container__menu {
   justify-content: space-between;
 }
-.container .logo {
+
+.announce {
+  margin-top: 200px;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  margin: 65px 0 0 0;
+}
+.socials__text {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: gilroy-bold;
+  color: #FFFFFF;
+  writing-mode: vertical-rl;
+  margin: 0 0 24px 0;
+}
+.socials__icon {
+  max-width: 24px;
+  max-height: 24px;
+  margin: 0 0 24px 0;
+}
+
+.logo {
   color: #FFFFFF;
   font-family: chronicle-display;
   line-height: 20px;
