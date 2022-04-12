@@ -1,10 +1,4 @@
 @charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: "chronicle-display";
   src: url("fonts/Chronicle Display Black.otf");
@@ -21,6 +15,16 @@
   font-family: "gilroy-extrabold";
   src: url("fonts/Gilroy-ExtraBold.ttf");
 }
+@font-face {
+  font-family: "gilroy";
+  src: url("fonts/Gilroy-Regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   max-width: 1920px;
   background: url("img/bg-main.png") no-repeat, linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 0%) fixed;
@@ -49,7 +53,7 @@ body {
 .socials__text {
   font-weight: 600;
   font-size: 18px;
-  font-family: gilroy-bold;
+  font-family: gilroy;
   color: #FFFFFF;
   writing-mode: vertical-rl;
   margin: 0 0 24px 0;
@@ -58,6 +62,49 @@ body {
   max-width: 24px;
   max-height: 24px;
   margin: 0 0 24px 0;
+}
+
+.announcement__title {
+  display: flex;
+  position: relative;
+  text-transform: uppercase;
+  color: #FBD784;
+  font-weight: 800;
+  font-family: gilroy;
+  letter-spacing: 6px;
+  font-size: 18px;
+  margin-left: 104px;
+}
+.announcement__title:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  width: 72px;
+  border-bottom: 2px solid #FBD784;
+  position: absolute;
+  left: -104px;
+}
+.announcement__title-line {
+  display: flex;
+  border-bottom: 1px solid;
+  width: 25px;
+}
+.announcement__main {
+  margin: 16px 0 16px 0;
+  text-transform: capitalize;
+  font-family: chronicle-display;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 88px;
+}
+.announcement__scroll {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: gilroy;
+  color: #FFFFFF;
+}
+.announcement__scroll__arrow {
+  font-size: 180%;
 }
 
 .logo {
