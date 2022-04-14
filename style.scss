@@ -91,15 +91,25 @@ body {
   }
 
   &__scroll {
+    display: flex;
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     font-family: gilroy;
     color: #FFFFFF;
-
-    &__arrow {
-      font-size: 180%;
-    }
+    animation: scroll 2.6s infinite linear;
   }
+
+  &__scroll:after {
+    content: '\2193';
+    position: absolute;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: auto;
+    bottom: -5px;
+    left: 90px;
+  }
+
 }
 
 .logo {
@@ -151,5 +161,17 @@ body {
 
   &__icon {
     margin: 0 10px 0 0;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, -30%, 0);
+  }
+  50% {
+    transform: translate3d(0, 30%, 0);
+  }
+  100% {
+    transform: translate3d(0, -30%, 0);
   }
 }

@@ -98,13 +98,22 @@ body {
   font-size: 88px;
 }
 .announcement__scroll {
+  display: flex;
+  position: relative;
   font-weight: 500;
   font-size: 16px;
   font-family: gilroy;
   color: #FFFFFF;
+  animation: scroll 2.6s infinite linear;
 }
-.announcement__scroll__arrow {
-  font-size: 180%;
+.announcement__scroll:after {
+  content: "↓";
+  position: absolute;
+  font-weight: 500;
+  font-size: 26px;
+  font-family: auto;
+  bottom: -5px;
+  left: 90px;
 }
 
 .logo {
@@ -240,6 +249,18 @@ body {
 }
 .auth__icon {
   margin: 0 10px 0 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, -30%, 0);
+  }
+  50% {
+    transform: translate3d(0, 30%, 0);
+  }
+  100% {
+    transform: translate3d(0, -30%, 0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
