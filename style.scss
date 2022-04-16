@@ -18,6 +18,9 @@ body {
   margin: 64px 80px 0 80px;
   max-width: 1760px;
   display: flex;
+  @include md-max {
+    margin: 23px 80px 0 80px;
+  }
 
   &__menu {
     justify-content: space-between;
@@ -107,13 +110,13 @@ body {
     font-weight: 500;
     font-size: 88px;
     @include xl-max {
-      font-size: 60px;
+      font-size: 50px;
     }
     @include lg-max {
       font-size: 40px;
     }
     @include md-max {
-      font-size: 25px;
+      font-size: 35px;
     }
     @include sm-max {
       display: none;

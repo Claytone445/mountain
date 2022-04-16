@@ -36,6 +36,11 @@ body {
   max-width: 1760px;
   display: flex;
 }
+@media (max-width: 768px) {
+  .container {
+    margin: 23px 80px 0 80px;
+  }
+}
 .container__menu {
   justify-content: space-between;
 }
@@ -129,7 +134,7 @@ body {
 }
 @media (max-width: 1200px) {
   .announcement__main {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 @media (max-width: 992px) {
@@ -139,7 +144,7 @@ body {
 }
 @media (max-width: 768px) {
   .announcement__main {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 @media (max-width: 576px) {
