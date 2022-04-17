@@ -217,7 +217,7 @@ body {
 
 #scrollbar {
   overflow-y: scroll;
-  scrollbar-color: #FFFFFF rgba(0, 0, 0, 0.3);
+  scrollbar-color: #FFF rgba(0, 0, 0, 0.3);
   scrollbar-width: thin;
 }
 
