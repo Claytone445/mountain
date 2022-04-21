@@ -371,24 +371,27 @@ body {
     transform: translate3d(0, -30%, 0);
   }
 }
-.info {
+.information {
   margin: 850px 230px 0 230px;
+}
+
+.info {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 .info__text {
-  margin-top: 45px;
+  max-width: 632px;
+  margin-top: 141px;
   position: relative;
 }
 .info__number {
-  font-family: gilroy;
+  font-family: gilroy-bold;
   font-size: 240px;
   font-weight: 700;
   color: #FFFFFF;
   opacity: 0.1;
   position: absolute;
-  top: -152px;
+  top: -160px;
   left: -140px;
 }
 .info__name {
@@ -417,8 +420,43 @@ body {
   font-size: 64px;
   color: #FFFFFF;
 }
+.info__about {
+  color: #FFFFFF;
+  font-family: gilroy;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 28px 0;
+  line-height: 32px;
+}
+.info__more {
+  position: relative;
+  font-family: gilroy;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FBD784;
+}
+.info__more::after {
+  content: "→";
+  position: absolute;
+  font-family: math;
+  font-size: 20px;
+  line-height: 22px;
+  color: #FBD784;
+  margin-left: 16px;
+}
+.info__picture {
+  max-width: 570px;
+}
 .info__picture img {
+  max-width: 100%;
+  padding: 20px;
   object-fit: cover;
+}
+
+.info-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
