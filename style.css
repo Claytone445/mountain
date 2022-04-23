@@ -565,6 +565,17 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+.info-reverse .info__text {
+  margin-left: 60px;
+}
+@media (max-width: 576px) {
+  .info-reverse .info__text {
+    margin-left: 0px;
+  }
+}
+.info-reverse .info__picture img {
+  margin: 0px;
+}
 @media (max-width: 768px) {
   .info-reverse {
     font-size: 100px;

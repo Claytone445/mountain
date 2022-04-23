@@ -430,6 +430,17 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
 
+  .info__text {
+    margin-left: 60px;
+    @include sm-max {
+      margin-left: 0px;
+    }
+  }
+
+  .info__picture img {
+    margin: 0px;
+  }
+
   @include xxl-max {
 
   }
