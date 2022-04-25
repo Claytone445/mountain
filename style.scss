@@ -453,3 +453,41 @@ body {
     align-items: center;
   }
 }
+
+.footer-container {
+  margin: 200px 230px 0 230px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    color: #FFFFFF;
+    font-family: chronicle-display;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    color: #FFFFFF;
+    font-family: gilroy-bold;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  &__copyright {
+    margin-top: 120px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-family: gilroy-bold;
+    line-height: 32px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}

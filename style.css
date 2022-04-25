@@ -588,4 +588,39 @@ body {
   }
 }
 
+.footer-container {
+  margin: 200px 230px 0 230px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info__logo {
+  color: #FFFFFF;
+  font-family: chronicle-display;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.footer-info__description {
+  color: #FFFFFF;
+  font-family: gilroy-bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+.footer-info__copyright {
+  margin-top: 120px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  font-family: gilroy-bold;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=style.css.map */
