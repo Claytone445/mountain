@@ -411,6 +411,11 @@ body {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  .info {
+    margin-bottom: 20px;
+  }
+}
 .info__text {
   max-width: 632px;
   margin-top: 141px;
@@ -446,6 +451,7 @@ body {
   }
 }
 .info__number {
+  content: "";
   font-family: gilroy-bold;
   font-size: 240px;
   font-weight: 700;
@@ -476,9 +482,7 @@ body {
 }
 @media (max-width: 768px) {
   .info__number {
-    font-size: 100px;
-    top: -50px;
-    left: -24px;
+    display: none;
   }
 }
 .info__name {
@@ -575,13 +579,6 @@ body {
 }
 .info-reverse .info__picture img {
   margin: 0px;
-}
-@media (max-width: 768px) {
-  .info-reverse {
-    font-size: 100px;
-    top: -50px;
-    left: -24px;
-  }
 }
 @media (max-width: 576px) {
   .info-reverse {

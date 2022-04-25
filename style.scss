@@ -288,6 +288,9 @@ body {
     justify-content: center;
     align-items: center;
   }
+  @include md-max {
+    margin-bottom: 20px;
+  }
 
   &__text {
     max-width: 632px;
@@ -317,6 +320,7 @@ body {
   }
 
   &__number {
+    content: "";
     font-family: gilroy-bold;
     font-size: 240px;
     font-weight: 700;
@@ -339,9 +343,7 @@ body {
       left: -50px;
     }
     @include md-max {
-      font-size: 100px;
-      top: -50px;
-      left: -24px;
+      display: none;
     }
 
   }
@@ -441,20 +443,10 @@ body {
     margin: 0px;
   }
 
-  @include xxl-max {
+  .info__number {
 
   }
-  @include xl-max {
 
-  }
-  @include lg-max {
-
-  }
-  @include md-max {
-    font-size: 100px;
-    top: -50px;
-    left: -24px;
-  }
   @include sm-max {
     flex-direction: column;
     justify-content: center;
