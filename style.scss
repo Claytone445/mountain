@@ -1,5 +1,6 @@
 @import "adaptiveMixins";
 @import "fonts";
+@import "footer";
 
 * {
   padding: 0;
@@ -303,7 +304,6 @@ br {
   &__text {
     max-width: 632px;
     margin-top: 141px;
-    position: relative;
     @include xxl-max {
       max-width: 380px;
     }
@@ -327,34 +327,6 @@ br {
 
   }
 
-  &__number {
-    content: "";
-    font-family: gilroy-bold;
-    font-size: 240px;
-    font-weight: 700;
-    color: #FFFFFF;
-    opacity: 0.1;
-    position: absolute;
-    top: - 160px;
-    left: - 50px;
-    @include xxl-max {
-      font-size: 200px;
-      top: -140px;
-    }
-    @include xl-max {
-      font-size: 180px;
-      top: -120px;
-    }
-    @include lg-max {
-      font-size: 140px;
-      top: -80px;
-    }
-    @include md-max {
-      display: none;
-    }
-
-  }
-
   &__name {
     display: flex;
     position: relative;
@@ -368,6 +340,30 @@ br {
     @include sm-max {
       margin-bottom: 20px;
     }
+  }
+
+  &__number {
+    content: "";
+    font-family: gilroy-bold;
+    font-size: 240px;
+    font-weight: 700;
+    color: #FFFFFF;
+    opacity: 0.1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    @include xxl-max {
+      font-size: 200px;
+    }
+    @include xl-max {
+      font-size: 180px;
+    }
+    @include lg-max {
+      font-size: 140px;
+    }
+    @include md-max {
+      display: none;
+    }
+
   }
 
   &__name:before {
@@ -459,118 +455,5 @@ br {
 }
 
 /*Footer*/
-.footer-container {
-  margin: 200px 230px 120px 230px;
-  display: flex;
-  justify-content: space-between;
-  @include lg-max {
-    margin: 80px 80px 120px 80px;
-  }
-  @include md-max {
-    margin: 160px 60px 120px 60px;
-  }
-  @include sm-max {
-    flex-direction: column-reverse;
-    margin: 50px 40px 0 40px;
-  }
-}
 
-.footer-info {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-
-  &__logo {
-    color: #FFFFFF;
-    font-family: chronicle-display;
-    line-height: 20px;
-    font-weight: bold;
-    font-size: 32px;
-    margin-bottom: 24px;
-    @include sm-max {
-      display: flex;
-      justify-content: center;
-      margin: 10px 0;
-      font-size: 36px;
-    }
-  }
-
-  &__description {
-    color: #FFFFFF;
-    font-family: gilroy-bold;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 32px;
-  }
-
-  &__copyright {
-    margin-top: 120px;
-    color: #FFFFFF;
-    opacity: 0.5;
-    font-family: gilroy-bold;
-    line-height: 32px;
-    font-weight: bold;
-    font-size: 18px;
-    @include xl-max {
-      margin-top: 80px;
-    }
-    @include lg-max {
-      margin-top: 60px;
-    }
-    @include md-max {
-      margin-top: 40px;
-    }
-    @include sm-max {
-      margin-top: 20px;
-    }
-  }
-}
-
-.footer-menu {
-  display: flex;
-  justify-content: space-between;
-  max-width: 566px;
-  width: 100%;
-  @include sm-max {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  &__blog, &__more {
-    list-style: none;
-    margin: 0 10px;
-  }
-
-  &__link {
-    font-family: gilroy;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    margin-bottom: 16px;
-  }
-
-  &__link a {
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-
-  &__link-title {
-    font-family: gilroy;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 16px;
-    @include sm-max {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  &__link-title a {
-    color: #FBD784;
-    text-decoration: none;
-  }
-
-}
+/*Footer*/
